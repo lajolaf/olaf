@@ -39,7 +39,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-<title>TWICE SURVIVAL | Infinite Music Challenge</title>
+<title>TWICE SURVIVAL | INTRO Challenge</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&amp;family=Zen+Kaku+Gothic+New:wght@400;700;900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
@@ -180,7 +180,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 </div>
 <div class="text-center space-y-2">
 <h2 class="text-4xl font-display font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-blue">TIME ATTACK</h2>
-<p class="text-gray-400 text-sm">Correct Answer: <span class="text-neon-blue">+5 Sec</span> | Wrong: <span class="text-red-500">-10 Sec</span></p>
+<p class="text-gray-400 text-sm">Correct Answer: <span class="text-neon-blue">+25 Sec</span> | Wrong: <span class="text-red-500">-5 Sec</span></p>
 <p class="text-xs text-gray-600 mt-4">⚠️ Sound Required</p>
 </div>
 <div class="flex flex-col items-center gap-2 hidden" id="loading-indicator">
@@ -228,7 +228,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <div class="hidden flex-1 flex flex-col justify-center items-center text-center space-y-8 animate-fade-in z-20" id="screen-result">
 <div>
 <h2 class="text-6xl font-display font-bold text-red-500 glitch mb-2" data-text="GAME OVER">GAME OVER</h2>
-<p class="text-gray-400">SESSION TERMINATED</p>
+<p class="text-gray-400">You can do it!</p>
 </div>
 <div class="cyber-panel p-8 rounded-2xl w-full max-w-sm">
 <div class="text-sm text-gray-400 mb-1">FINAL SCORE</div>
@@ -275,9 +275,9 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
         // --- CONFIGURATION ---
         const searchQueries = [
             "TWICE Like OOH-AHH", "TWICE Do it again", "TWICE Going Crazy", "TWICE Truth", "TWICE Candy Boy", "TWICE Like a Fool", "TWICE CHEER UP", "TWICE Precious Love", "TWICE Touchdown", "TWICE Tuk Tok", "TWICE Woohoo", "TWICE My Headphones on", "TWICE TT", "TWICE 1 TO 10", "TWICE PONYTAIL", "TWICE JELLY JELLY", "TWICE PIT-A-PAT",
-            "TWICE NEXT PAGE", "TWICE ONE IN A MILLION", "TWICE KNOCK KNOCK", "TWICE Melting", "TWICE SIGNAL", "TWICE Three Times a Day", "TWICE Only You", "TWICE Hold Me Tight", "TWICE Eye Eye Eyes", "TWICE Someone Like Me", "TWICE One More Time", "TWICE Luv Me", "TWICE LIKEY", "TWICE TURTLE", "TWICE MISSING U", "TWICE WOW", 
+            "TWICE NEXT PAGE", "TWICE ONE IN A MILLION", "TWICE KNOCK KNOCK", "TWICE Melting", "TWICE SIGNAL", "TWICE Three Times a Day", "TWICE Hold Me Tight", "TWICE Eye Eye Eyes", "TWICE Someone Like Me", "TWICE One More Time", "TWICE Luv Me", "TWICE LIKEY", "TWICE TURTLE", "TWICE MISSING U", "TWICE WOW", 
             "TWICE FFW", "TWICE DING DONG", "TWICE 24/7", "TWICE LOOK AT ME", "TWICE ROLLIN'", "TWICE LOVE LINE", "TWICE DON'T GIVE UP", "TWICE YOU IN MY HEART", "TWICE JALJAYO GOOD NIGHT", "TWICE Heart Shaker", "TWICE Merry & Happy", "TWICE Candy Pop", "TWICE BRAND NEW GIRL", "TWICE What is Love?", "TWICE SWEET TALKER", "TWICE HO!", 
-            "TWICE DEJAVU", "TWICE SAY YES", "TWICE STUCK", "TWICE Wake Me Up", "TWICE Pink Lemonade", "TWICE Dance The Night Away", "TWICE CHILLAX", "TWICE Shot thru the heart", "TWICE I WANT YOU BACK", "TWICE BDZ", "TWICE L.O.V.E", "TWICE Wishing", "TWICE Say it again", "TWICE Be as ONE", "TWICE STAY BY MY SIDE", "TWICE YES or YES", 
+            "TWICE DEJAVU", "TWICE STUCK", "TWICE Wake Me Up", "TWICE Pink Lemonade", "TWICE Dance The Night Away", "TWICE CHILLAX", "TWICE Shot thru the heart", "TWICE I WANT YOU BACK", "TWICE BDZ", "TWICE L.O.V.E", "TWICE Wishing", "TWICE Say it again", "TWICE Be as ONE", "TWICE STAY BY MY SIDE", "TWICE YES or YES", 
             "TWICE SAY YOU LOVE ME", "TWICE LALALA", "TWICE YOUNG & WILD", "TWICE SUNSET", "TWICE AFTER MOON", "TWICE The Best Thing I Ever Did", "TWICE FANCY", "TWICE STUCK IN MY HEAD", "TWICE GIRLS LIKE US", "TWICE HOT", "TWICE TURN IT UP", "TWICE STRAWBERRY", "TWICE HAPPY HAPPY", "TWICE The Reason Why", "TWICE Breakthrough",
             "TWICE Feel Special", "TWICE RAINBOW", "TWICE GET LOUD", "TWICE TRICK IT", "TWICE LOVE FOOLISH", "TWICE 21:29", "TWICE Fake & True", "TWICE Stronger", "TWICE Changing!", "TWICE What You Waiting For", "TWICE POLISH", "TWICE How u doin'", "TWICE The Power of Love", "TWICE Fanfare", "TWICE MORE & MORE", "TWICE OXYGEN", 
             "TWICE FIREWORK", "TWICE MAKE ME GO", "TWICE SHADOW", "TWICE DON'T CALL ME AGAIN", "TWICE SWEET SUMMER DAY", "TWICE BETTER", "TWICE Scorpion", "TWICE I CAN'T STOP ME", "TWICE HELL IN HEAVEN", "TWICE UP NO MORE", "TWICE DO WHAT WE LIKE", "TWICE BRING IT BACK", "TWICE BELIEVER", "TWICE QUEEN", "TWICE GO HARD", 
@@ -295,8 +295,8 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
         let songDatabase = [];
         let gameActive = false;
         let score = 0;
-        let timeLeft = 30;
-        let maxTime = 30;
+        let timeLeft = 45;
+        let maxTime = 45;
         let combo = 0;
         let maxCombo = 0;
         let songsCleared = 0;
@@ -389,7 +389,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 
         // --- GAME LOGIC ---
 
-        function startGame() {
+         function startGame() {
             if (songDatabase.length < 10) {
                 alert("Loading music data... Please wait a moment.");
                 return;
@@ -399,7 +399,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             combo = 0;
             maxCombo = 0;
             songsCleared = 0;
-            timeLeft = 30; 
+            timeLeft = 45; 
             gameActive = true;
 
             document.getElementById('screen-menu').classList.add('hidden');
@@ -483,7 +483,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             const isCorrect = selectedId === currentSong.id;
 
             if (isCorrect) {
-                const timeBonus = 5;
+                const timeBonus = 25;
                 timeLeft = Math.min(maxTime, timeLeft + timeBonus);
                 combo++;
                 if (combo > maxCombo) maxCombo = combo;
@@ -502,7 +502,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                 setTimeout(nextRound, 200);
 
             } else {
-                timeLeft -= 10;
+                timeLeft -= 5;
                 combo = 0;
                 
                 showFeedback("MISS", "text-red-500");
